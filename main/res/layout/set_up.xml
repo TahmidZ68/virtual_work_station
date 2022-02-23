@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_gravity="fill_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="40dp"
+        android:paddingLeft="140dp"
+        android:text="Logo"
+        android:textSize="60dp" />
+
+    <LinearLayout
+        android:layout_width="410dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Your Name"
+                android:textSize="18dp">
+
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp">
+            <EditText
+                android:textColor="@color/white"
+                android:id="@+id/uname"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:textSize="23dp"
+                android:layout_marginTop="7dp"
+                android:background="@color/ash">
+
+            </EditText>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Business Name"
+                android:textSize="18dp">
+
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp">
+            <EditText
+                android:textColor="@color/white"
+                android:id="@+id/buname"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:textSize="23dp"
+                android:layout_marginTop="7dp"
+                android:background="@color/ash">
+
+            </EditText>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Business Location"
+                android:textSize="18dp">
+
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp">
+            <EditText
+                android:textColor="@color/white"
+                android:id="@+id/bulocation"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:textSize="23dp"
+                android:layout_marginTop="7dp"
+                android:background="@color/ash">
+
+            </EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:text="Business Description"
+                android:textSize="18dp">
+
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp">
+            <EditText
+                android:textColor="@color/white"
+                android:id="@+id/budescription"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:textSize="23dp"
+                android:layout_marginTop="7dp"
+                android:background="@color/ash">
+
+            </EditText>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+       >
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/profile"
+                android:textSize="23dp"
+                android:layout_marginLeft="130dp">
+
+            </ImageView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:id="@+id/fab"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:text="Select an Image"
+                android:textSize="18dp"
+                android:layout_marginLeft="100dp"
+                android:gravity="center">
+
+            </TextView>
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="150dp"
+        android:layout_marginTop="25dp">
+
+        <Button
+            android:id="@+id/save_btn"
+            android:layout_width="20dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="#00BCD4"
+            android:clickable="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Save"
+            android:textColor="#0f0f0f"
+            android:textSize="20dp"
+            app:backgroundTint="#03A9F4"></Button>
+
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>

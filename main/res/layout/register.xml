@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_gravity="fill_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="40dp"
+        android:paddingLeft="140dp"
+        android:text="Logo"
+        android:textSize="60dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="60dp">
+
+        <EditText
+            android:id="@+id/etusername"
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:paddingTop="7dp"
+            android:layout_gravity="fill_horizontal"
+            android:textColor="#fff"
+            android:gravity="fill_horizontal"
+            android:layout_marginLeft="90dp"
+            android:hint="Email/Username"
+            android:paddingLeft="25dp"
+            android:inputType="text"
+            android:textSize="18dp"
+            android:shadowColor="@color/black"
+            android:background="@drawable/curved_input"
+            android:backgroundTint="@color/teal_200"
+            android:selectAllOnFocus="true"></EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp">
+
+        <EditText
+            android:id="@+id/etpass1"
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:paddingTop="7dp"
+            android:layout_gravity="fill_horizontal"
+            android:textColor="#fff"
+            android:gravity="fill_horizontal"
+            android:layout_marginLeft="90dp"
+            android:hint="Password"
+            android:paddingLeft="25dp"
+            android:inputType="text"
+            android:textSize="18dp"
+            android:shadowColor="@color/black"
+            android:background="@drawable/curved_input"
+            android:backgroundTint="@color/teal_200"
+            android:selectAllOnFocus="true"></EditText>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp">
+
+        <EditText
+            android:id="@+id/etpass2"
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:paddingTop="7dp"
+            android:layout_gravity="fill_horizontal"
+            android:textColor="#fff"
+            android:gravity="fill_horizontal"
+            android:layout_marginLeft="90dp"
+            android:hint="Confirm password"
+            android:paddingLeft="25dp"
+            android:inputType="text"
+            android:textSize="18dp"
+            android:shadowColor="@color/black"
+            android:background="@drawable/curved_input"
+            android:backgroundTint="@color/teal_200"
+            android:selectAllOnFocus="true"></EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/rem_userid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Remember User Id"
+            android:layout_marginLeft="90dp"
+            >
+
+        </CheckBox>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/rem_lgid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Remember Login Id"
+            android:layout_marginLeft="90dp"
+            >
+
+        </CheckBox>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/login_error_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Error in username/password"
+            android:layout_marginLeft="90dp"
+            android:textColor="#f70717"
+            android:visibility="invisible">
+
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="180dp"
+        android:layout_marginTop="30dp">
+        <TextView
+            android:id="@+id/btngo"
+            android:background="#8de6fc"
+            android:contextClickable="true"
+            android:layout_height="40dp"
+            android:textSize="20dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="#0f0f0f"
+            android:backgroundTint="#9bf0fa"
+            android:text="Go"
+            android:clickable="true"
+            android:layout_width="10dp"
+            android:layout_weight="1"
+            ></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="180dp"
+        android:layout_marginTop="30dp">
+        <TextView
+            android:id="@+id/btnexit"
+            android:background="#8de6fc"
+            android:contextClickable="true"
+            android:layout_height="40dp"
+            android:textSize="20dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="#0f0f0f"
+            android:backgroundTint="#9bf0fa"
+            android:text="Exit"
+            android:clickable="true"
+            android:layout_width="10dp"
+            android:layout_weight="1"
+            ></TextView>
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/progres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+          android:visibility="gone">
+
+    </ProgressBar>
+</LinearLayout>
